@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin: 0 !important;
+}
+.container-fulid {
+  position: relative;
+}
+.headtop {
+  background-color: #000;
+  height: auto;
+  .imag {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    img {
+      margin-left: 40px;
+    }
+  }
+}
+.navs {
+  // position: absolute;
+  .row {
+    .logo2 {
+      padding: 0;
+      img {
+        margin-top: -10px;
+        margin-right: 0;
+      }
+      background-color: #000;
+    }
+    .nav1 {
+      padding-right: 0;
+      padding-top: 0px;
+      background-color: #000;
+      height: 100%;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: 40px solid transparent;
+        border-left: 0px solid #000;
+        border-top: 70px solid #000;
+        border-right: 70px solid #c5975c;
+        border-bottom: 0px solid #c5975c;
+      }
+      div {
+        padding-left: 20px;
+        background-color: #c5975c;
+      }
+      & a {
+        white-space: nowrap;
+        color: #704e39;
+        font-family: 微软雅黑, Microsoft YaHei;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 70px;
+        display: table-cell;
+        line-height: 70px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headtop {
+    height: 60px;
+    .imag {
+      text-align: center;
+      .xs-logo {
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

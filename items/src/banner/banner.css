@@ -1,0 +1,39 @@
+.swiper-container {
+  width: 100%;
+  height: auto;
+  .swiper-wrapper {
+    width: 100%;
+    .swiper-slide {
+      width: 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      img.scale {
+        transition: transform 2s;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .swiper-pagination-bullets {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 6%;
+    text-align: center;
+    .swiper-pagination-bullet {
+      width: 40px;
+      height: 4px;
+      display: inline-block;
+      background: #fff;
+      opacity: 1;
+      margin: 0 5px;
+      border-radius: 0;
+    }
+    /*自定义分页器激活时的样式表现*/
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background-color: #6e3c13;
+    }
+  }
+}

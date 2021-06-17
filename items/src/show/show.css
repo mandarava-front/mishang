@@ -1,0 +1,23 @@
+.show {
+  width: 100%;
+  background-color: #000;
+  height: auto;
+  overflow: hidden;
+  .shows {
+    background-color: #000;
+    .content {
+      width: 33.3%;
+      float: left;
+      overflow: hidden;
+      img {
+        text-align: center;
+        width: 96%;
+        margin-left: 2%;
+        transition: all 0.5s;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
